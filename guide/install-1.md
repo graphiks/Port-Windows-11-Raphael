@@ -88,12 +88,14 @@ p free
 ```
 
 ##### Creating ESP partition
-> 32GB is the **End** of the **userdata** partition and 32.5GB is the end of the ESP partition we will be creating, so it will be 500MB in size. Also replace 32GB to the end of userdata accordingly.
+> 32GB is the **End** of the **userdata** partition in this example and 32.5GB is the end of the ESP partition we will be creating, which will be 500MB in size.
+
+> Replace 32GB with the actual value you used when resizing the partition, then add 0.5 to this value and use it for the second value.
 ```cmd
 mkpart esp fat32 32GB 32.5GB
 ```
 
-> Replace "$" with your ESP partition number, usually 30, or 31
+> Replace "$" with your ESP partition number, usually 30 or 31
 ```cmd
 set $ esp on
 ```
