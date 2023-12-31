@@ -13,24 +13,24 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP]()
+- [TWRP](https://dl.twrp.me/raphael/twrp-3.7.0_9-0-raphael.img.html)
 
 - [UEFI image]()
 
-- [WOA Helper app]()
+- [WOA Helper app](https://github.com/graphiks/woa-raphael/raw/main/woa-helper-raphael.apk)
 
-- [StA Installer]()
+- [StA Installer](https://github.com/graphiks/woa-raphael/raw/main/StA_Installer_raphael.exe)
 
 
 ## Method 1 - root required
 > This method requires root. Use method 2 if you aren't rooted.
 
+This guide assumes you are rooted, if you aren't, please follow [this guide]() first.
+
 ### Setup - Android
-- Create a folder named "UEFI" on your internal storage
-- Copy the uefi image into the UEFI folder
-- Download and install the APK provided
-- Also download the StA Installer
-- Open the app and allow any root access it wants
+- Create a folder named "UEFI" on your internal storage and place the UEFI image here
+- Download both the WOA Helper app as well as the StA Installer
+- Install and open WOA Helper and allow any root access it wants
 - Press the "BACKUP ANDROID BOOT" button, which will back up your boot image to /sdcard/boot.img (internal storage)
 - Also press the "Mount/Unmount Windows" button to mount Windows to /sdcard/Windows
 - Move/copy the StA Installer and boot.img to /sdcard/Windows
