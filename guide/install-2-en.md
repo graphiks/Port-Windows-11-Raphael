@@ -157,21 +157,29 @@ remove letter y
 exit
 ```
 
+##### Reboot your recovery
+> To remove the msc script
+- Reboot to recovery through TWRP, or run
+```cmd
+adb reboot recovery
+```
+
+##### Push the UEFI to your phone
+> Drag and drop the UEFI (xiaomi-raphael.img) to your phone
+
+##### Back up your Android boot image
+Use the TWRP backup feature to backup your Android boot image. Name this backup "Android"
+
+##### Flash the UEFI
+Use the TWRP install feature to flash the UEFI image to your boot partition. Select "install image", then locate the image.
+
+##### Back up your Windows boot image
+Use the TWRP backup feature to backup your Windows boot image. Name this backup "Windows"
+
 ## Boot into Windows
-> Make sure you are using a command window in platform tools for the next steps
-> 
-##### Reboot to fastboot
-```cmd
-adb reboot bootloader
-```
+After having flashed the UEFI image, reboot your phone.
 
-##### Boot the UEFI
-> Make sure the UEFI is placed in the platform-tools folder, otherwise specify the path to the image file
-```cmd
-fastboot boot xiaomi-raphael.img
-```
-
-Your device will now reboot and set up Windows. This will take some time. It will eventually reboot, when it does, reboot to fastboot and boot the UEFI again.
+Your device will nlw set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
 
 ##### Setting up Windows
 > You will have to run the limited setup because Wi-Fi does not work during boot.
@@ -180,9 +188,9 @@ To do this, open the accessibility menu and open the on-screen keyboard, then pr
 ```cmd
 oobe/bypassnro
 ```
-Your device will now reboot, reboot back to Windows using fastboot one final time and finish setup. Make sure to press the "I don't have internet" button during setup.
+Your device will now reboot. Finish setup after it boots back up. Make sure to press the "I don't have internet" button during setup.
 
-After windows finishes booting, press the restart button to boot back to Android.
+After windows finishes booting, press the restart button and force boot to TWRP with the button combination after the screen shuts off.
 
 #### It is recommended to set up a dualboot method now.
 > To do this, proceed to the [dualboot guide](dualboot-en.md)
