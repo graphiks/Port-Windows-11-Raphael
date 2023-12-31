@@ -181,7 +181,7 @@ Use the TWRP backup feature to backup your Windows boot image. Name this backup 
 ##### Boot into Windows
 After having flashed the UEFI image, reboot your phone.
 
-Your device will nlw set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
+Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
 
 ## Setting up Windows
 > You will have to run the limited setup because Wi-Fi does not work during boot.
