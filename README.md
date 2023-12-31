@@ -20,7 +20,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Installation instructions](guide/install-1-en.md)
 
-- [Troubleshooting](guide/troubleshooting-en.md) NEEDS TO BE CHANGED
+- [Troubleshooting](guide/troubleshooting-en.md)
 
 
 ## Miscellaneous
@@ -29,7 +29,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Optional post-install stuff](guide/postinstall-en.md) NEEDS TO BE CHANGED
 
-- [Driver updating instructions](guide/update-en.md) NEEDS TO BE CHANGED
+- [Reinstall instructions](guide/update-en.md)
 
 - [Uninstall instructions](guide/uninstall-en.md) NEEDS TO BE CHANGED
 
