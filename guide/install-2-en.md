@@ -9,7 +9,7 @@
 
 ### Prerequisites
 
-- [Windows on ARM64 image creator(Windows 11 only)](https://uupdump.net/)
+- [Windows on ARM64 image creator](https://uupdump.net/)
 - [Alternatively a prebuilt esd](https://drive.google.com/drive/folders/1JEC2QhFTyZhnm4qdzeFANTmeqoDCbS1I?usp=drive_link)
 - [UEFI image]() EDIT THIS
 - [Drivers]() EDIT THIS
