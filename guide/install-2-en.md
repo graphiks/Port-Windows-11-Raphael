@@ -185,6 +185,6 @@ Your device will now reboot, reboot back to Windows using fastboot one final tim
 After windows finishes booting, press the restart button to boot back to Android.
 
 #### It is recommended to set up a dualboot method now.
-> To do this, proceed to the [dualboot guide]()
+> To do this, proceed to the [dualboot guide](dualboot-en.md)
 
 ## Finished!
