@@ -21,7 +21,8 @@ This usually means that you have an unclean Windows image with some other driver
 This usually means that winlogon.exe has failed, and you may need to reapply the Windows image.
 
 ## The computer restarted unexpectedly or encountered an unexpected error
-If you stumble upon this error, you may need to redeploy the Windows image. Use the [reinstall guide](update-en.md) for this. > This error usually occurs when you get a BSOD while Windows is setting up. Altough this BSOD is very uncommon since the WiFi drivers are disabled by default, which may crash. 
+If you stumble upon this error, you may need to redeploy the Windows image. Use the [reinstall guide](update-en.md) for this.
+> This error usually occurs when you get a BSOD while Windows is setting up. Altough this BSOD is very uncommon since the WiFi drivers are disabled by default, which may crash. 
 
 ## INACCESSIBLE_BOOT_DEVICE BSOD
 This Blue Screen of Death likely means some broken driver installation. To fix this, open up diskpart again to add letter X to Windows and letter Y to ESP, then reinstall the drivers by running the driverupdater again. You can use the [reinstall guide](update-en.md) for this.
