@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Redmi 9T Pro">
 
 
 # Running Windows on Redmi K20 Pro / Mi 9T Pro (raphael/raphaelin)
@@ -81,7 +81,6 @@ adb shell ./parted /dev/block/sda
 ```cmd
 (parted) resizepart (userdata partition number)
 ```
-> 32GB is the **End** of the **userdata** partition and 32.5GB is the end of the partition we will be creating, so it will be 500MB in size. Also replace 32GB to the end of userdata accordingly.
 ```cmd
 End? [122GB]? 32GB
 ```
@@ -92,7 +91,7 @@ End? [122GB]? 32GB
 ```
 
 ##### Creating ESP partition
-> Here, 32GB is the end of userdata partition
+> 32GB is the **End** of the **userdata** partition and 32.5GB is the end of the ESP partition we will be creating, so it will be 500MB in size. Also replace 32GB to the end of userdata accordingly.
 ```cmd
 (parted) mkpart esp fat32 32GB 32.5GB
 ```
@@ -113,6 +112,10 @@ End? [122GB]? 32GB
 ```cmd
 (parted) quit
 ```
+
+##### Formatting data
+Format all data in TWRP, or Android will not boot.
+
 
 #### Check if Android still starts
 Just restart the phone, and see if Android still works
