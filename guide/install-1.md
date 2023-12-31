@@ -68,44 +68,46 @@ adb shell /cache/parted /dev/block/sda
 ##### Printing the current table partition:
 > Parted will print the list of partitions, userdata should be the last partition in the list.
 ```cmd
-(parted) print
+print
 ```
 
 ##### Resizing userdata
-> You can choose the size you want. In this example we resize it to 32GB.
+> Replace $ with the number of the userdata partition
 ```cmd
-(parted) resizepart (userdata partition number)
+resizepart $
 ```
+> Parted will now ask you for the end value.
+> You can choose the size you want. In this example we resize it to 32GB
 ```cmd
-End? [122GB]? 32GB
+32GB
 ```
 
 ##### Checking free space
 ```cmd
-"(parted) free"
+"p free"
 ```
 
 ##### Creating ESP partition
 > 32GB is the **End** of the **userdata** partition and 32.5GB is the end of the ESP partition we will be creating, so it will be 500MB in size. Also replace 32GB to the end of userdata accordingly.
 ```cmd
-(parted) mkpart esp fat32 32GB 32.5GB
+mkpart esp fat32 32GB 32.5GB
 ```
 
 > Replace "$" with your ESP partition number, usually 30, or 31
 ```cmd
-(parted) set $ esp on
+set $ esp on
 ```
 
 ##### Creating Windows partition
 > Here, 122GB is the end value of your phone's total storage. Replace with the end value you see when executing "p free"
 > 32.5GB is the end of esp
 ```cmd
-(parted) mkpart win ntfs 32.5GB 122GB
+mkpart win ntfs 32.5GB 122GB
 ```
 
 ##### Exit parted
 ```cmd
-(parted) quit
+quit
 ```
 
 ##### Formatting data
