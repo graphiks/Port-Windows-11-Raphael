@@ -56,6 +56,6 @@ This project is in an early stage, all the files here have been contributed by o
 [<img alt="nedokaka" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/104865210?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/nedokaka)
 [<img alt="RIllEX1"
 src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/142384494?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/RIllEX1)
-[<img alt="n00b69" src="https://avatars.githubusercontent.com/u/83274506?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/n00b69)
-[<img alt="RIllEX1" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/142384494?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/RIllEX1)
+[<img alt="n00b69" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/83274506?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/n00b69)
+[<img alt="graphiks" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/136170061?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/graphiks)
 
