@@ -1,7 +1,7 @@
 <img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Redmi 9T Pro">
 
 
-# Running Windows on Redmi K20 Pro / Mi 9T Pro
+# Running Windows on the Redmi K20 Pro / Mi 9T Pro
 
 ## Installation
 
@@ -33,10 +33,9 @@
 > 
 > If you don't use it and you face any errors, consider it your fault and consider yourself alone if you try asking for support as you have deferred from the main guide.
 
-##### Flash the TWRP recovery
+##### Flash TWRP recovery
 ```cmd
-fastboot flash recovery path\to\twrp.img
-fastboot reboot recovery
+fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
 > [!IMPORTANT]
