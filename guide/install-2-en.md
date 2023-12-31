@@ -126,7 +126,7 @@ bcdedit /store BCD /set "{default}" nointegritychecks on
 bcdedit /store BCD /set "{default}" recoveryenabled no
 ```
 
-##### Unassign disk letters
+## Unassign disk letters
 > So that they don't stay there after disconnecting the device
 ```cmd
 diskpart
