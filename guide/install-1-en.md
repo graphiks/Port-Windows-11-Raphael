@@ -1,7 +1,7 @@
-<img align="right" src="https://github.com/woa-vayu/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
 
 
-# Running Windows on the POCO X3 Pro
+# Running Windows on Redmi K20 Pro / Mi 9T Pro (raphael/raphaelin)
 
 ## Installation
 
@@ -9,7 +9,7 @@
 
 ### Prerequisites
 
-- [Modified TWRP](../../../releases/Recoveries)
+- [Raphael TWRP 3.7.0_9](https://dl.twrp.me/raphael/twrp-3.7.0_9-0-raphael.img.html)
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
@@ -21,7 +21,7 @@
 > 
 > Do not run the same command twice.
 > 
-> DO NOT REBOOT YOUR PHONE if you think you made a mistake, ask for help in the [Telegram chat](https://t.me/winonvayualt).
+> DO NOT REBOOT YOUR PHONE if you think you made a mistake, ask for help in the [Telegram chat](https://t.me/woaraphael).
 > 
 >
 > Do not run all commands at once, execute them in order!
@@ -29,17 +29,20 @@
 > YOU CAN BREAK YOUR DEVICE WITH THE COMMANDS BELOW IF YOU DO THEM WRONG!!!
 
 > [!IMPORTANT]
-> Make sure you use the MODDED TWRP Recovery throughout this whole tutorial as we provide tools to help aid this installation process and make it as easy as possible for you.
+> Make sure you use the provided TWRP Recovery throughout this whole tutorial as this will make it easier for you.
 > 
-> If you dont use it and you face any errors, consider it your fault and consider yourself alone if you try asking for support as you have deferred from the main guide.
+> If you don't use it and you face any errors, consider it your fault and consider yourself alone if you try asking for support as you have deferred from the main guide.
 
-##### Flash the modified TWRP recovery
+##### Flash the TWRP recovery
 ```cmd
 fastboot flash recovery path\to\twrp.img
 fastboot reboot recovery
 ```
+##### Partition backup
+> If you do anything incorrectly, you may wipe your UFS and render your device unusable.
+Use TWRP to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
 
-##### Run the partitioning script
+##### Partitioning guide
 
 > If it asks you to run it once again, do so
 
