@@ -1,18 +1,19 @@
-<img align="right" src="https://github.com/woa-vayu/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" <img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Redmi 9T Pro">
 
 
-# Running Windows on the POCO X3 Pro
+# Running Windows on the Redmi K20 Pro / Mi 9T Pro
 
-## Driver updating
+## Reinstall guide
+> This guide is used whenever you want to update or change your windows and / or driver installation.
 
 ### Prerequisites
+- [TWRP](https://dl.twrp.me/raphael/twrp-3.7.0_9-0-raphael.img.html) (should already be installed)
+- [DriverUpdater](https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0)
+- [Drivers]() EDIT THIS
+- [UEFI]() EDIT THIS
 
-- [UEFI](https://github.com/woa-vayu/edk2-msm/releases/latest)
-- [Modded TWRP](../../../releases/Recoveries)
-- [DriverUpdater](https://github.com/WOA-Project/DriverUpdater/releases/latest)
-- [Drivers](https://github.com/woa-vayu/Vayu-Drivers/releases/latest)
-
-#### Start TWRP recovery through the PC with the command
+#### Reinstalling Windows
+> If you have come here from the [troubleshooting page](troubleshooting-en.md) because you need to reinstall drivers, you can skip to "Reinstalling drivers" if you do not wish to re-apply the Windows image (which takes a long time)
 
 ```cmd
 fastboot boot <twrp.img>
