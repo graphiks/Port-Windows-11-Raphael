@@ -4,6 +4,7 @@
 # Running Windows on the Redmi K20 Pro / Mi 9T Pro
 
 ## Reinstall guide
+> [!NOTE]
 > This guide is used whenever you want to update or change your windows and / or driver installation.
 
 ### Prerequisites
