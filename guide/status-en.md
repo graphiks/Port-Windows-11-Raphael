@@ -1,23 +1,23 @@
-<img align="right" src="https://github.com/woa-vayu/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On raphael">
 
 
-# Running Windows on the POCO X3 Pro
+# Running Windows on the Xiaomi Mi 9T Pro / Redmi K20 Pro
 
 ## Project Status
 
-The project is finished. Some improvements might be made, but there won't be any driver updates.
+The project is in development. Expect some driver updates in the near future.
 
 #### Features
 
-- [ ] Audio ```Only by USB or Bluetooth```
-- [X] Battery status
+- [X] Audio 
+- [ ] Battery status
 - [x] Bluetooth
-- [x] Brightness
+- [ ] Brightness
 - [ ] Camera
 - [x] Cellular ```Only SIM1; requires provisioning before every boot; calling doesn't work```
 - [ ] Charging ```VERY slow```
 - [x] Display
-- [x] GPU
+- [x] GPU ```GPU Crashes Windows around 30mins in ```
 - [ ] SD ```Takes several attempts to be recognized and is very unstable```
 - [x] Touchscreen
 - [x] UFS
@@ -25,15 +25,15 @@ The project is finished. Some improvements might be made, but there won't be any
 - [x] Wi-Fi
 
 #### Sensors
-- [x] Accelerometer
+- [ ] Accelerometer
 - [ ] Fingerprint
-- [x] GPS
-- [x] Gyroscope
-- [x] Light sensor
-- [x] Magnetometer
-- [x] Proximity
+- [ ] GPS
+- [ ] Gyroscope
+- [ ] Light sensor
+- [ ] Magnetometer
+- [ ] Proximity
 
 #### Security
 
 - [ ] Security Processor ```Impossible to get working, Xiaomi broke the firmware```
-- [x] TPM (Software Backed)
+- [ ] TPM (Software Backed)
