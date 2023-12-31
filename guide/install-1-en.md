@@ -1,7 +1,7 @@
 <img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Redmi 9T Pro">
 
 
-# Running Windows on Redmi K20 Pro / Mi 9T Pro (raphael/raphaelin)
+# Running Windows on Redmi K20 Pro / Mi 9T Pro
 
 ## Installation
 
