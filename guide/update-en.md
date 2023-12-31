@@ -100,6 +100,99 @@ exit
 ## Installing Windows
 > Skip this step if you are only reinstalling/updating drivers
 
+> Replace `path\to\install.wim` with the actual path to install.wim.
 
+> If you are using an ISO file, it is located in the sources folder inside the ISO. Mount the ISO with Windows Explorer and then copy the path to it.
+> Alternatively, use one of the install.esd files from the Google Drive at the top of this page. Touch doesn't seem to work on 23h2, so use 22h2.
+
+```cmd
+dism /apply-image /ImageFile:path\to\install.wim /index:1 /ApplyDir:X:\
+```
+
+##### Installing Drivers
+EDIT THIS
+
+##### Create Windows bootloader files
+> Skip this step if you are only reinstalling/updating drivers
+```cmd
+bcdboot X:\Windows /s Y: /f UEFI
+```
+
+###### Configuring bootloader files
+> Skip this step if you are only reinstalling/updating drivers
+> Run these 4 commands seperately
+```cmd
+cd Y:\EFI\Microsoft\Boot
+```
+```cmd
+bcdedit /store BCD /set "{default}" testsigning on
+```
+```cmd
+bcdedit /store BCD /set "{default}" nointegritychecks on
+```
+```cmd
+bcdedit /store BCD /set "{default}" recoveryenabled no
+```
+
+##### Unassign disk letters
+> So that they don't stay there after disconnecting the device
+```cmd
+diskpart
+```
+
+##### Select the Windows volume of the phone
+> Use `lis vol` to find it, it's the one named "Windows"
+```diskpart
+select volume <number>
+```
+##### Unassign the letter X
+```diskpart
+remove letter x
+```
+
+##### Select the ESP volume of the phone
+> Use `list volume` to find it, it's the one named "ESP"
+```diskpart
+select volume <number>
+```
+##### Unassign the letter Y
+```diskpart
+remove letter y
+```
+
+##### Exit diskpart
+```diskpart
+exit
+```
+
+## Boot into Windows
+> Make sure you are using a command window in platform tools for the next steps
+> 
+##### Reboot to fastboot
+```cmd
+adb reboot bootloader
+```
+
+##### Boot the UEFI
+> Make sure the UEFI is placed in the platform-tools folder, otherwise specify the path to the image file
+```cmd
+fastboot boot xiaomi-raphael.img
+```
+
+Your device will now reboot and set up Windows. This will take some time. It will eventually reboot, when it does, reboot to fastboot and boot the UEFI again.
+
+##### Setting up Windows
+> You will have to run the limited setup because Wi-Fi does not work during boot.
+
+To do this, open the accessibility menu and open the on-screen keyboard, then press SHIFT + F10 to open CMD where you will run
+```cmd
+oobe/bypassnro
+```
+Your device will now reboot, reboot back to Windows using fastboot one final time and finish setup. Make sure to press the "I don't have internet" button during setup.
+
+After windows finishes booting, press the restart button to boot back to Android.
+
+#### It is recommended to set up a dualboot method now.
+> To do this, proceed to the [dualboot guide](dualboot-en.md)
 
 ## Finished!
