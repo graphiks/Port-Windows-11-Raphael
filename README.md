@@ -20,18 +20,18 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Installation instructions](guide/install-1-en.md)
 
-- [Troubleshooting](guide/troubleshooting-en.md)
+- [Troubleshooting](guide/troubleshooting-en.md) NEEDS TO BE CHANGED
 
 
 ## Miscellaneous
 
 - [Dualboot setup](guide/dualboot-en.md)
 
-- [Optional post-install stuff](guide/postinstall-en.md)
+- [Optional post-install stuff](guide/postinstall-en.md) NEEDS TO BE CHANGED
 
-- [Driver updating instructions](guide/update-en.md)
+- [Driver updating instructions](guide/update-en.md) NEEDS TO BE CHANGED
 
-- [Uninstall instructions](guide/uninstall-en.md)
+- [Uninstall instructions](guide/uninstall-en.md) NEEDS TO BE CHANGED
 
 ## Contributors
 
