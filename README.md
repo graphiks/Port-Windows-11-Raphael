@@ -27,7 +27,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Dualboot setup](guide/dualboot.md)
 
-- [Optional post-install stuff](guide/postinstall.md) NEEDS TO BE CHANGED
+- [Optional post-install stuff](guide/postinstall.md)
 
 - [Reinstall instructions](guide/reinstall.md)
 
