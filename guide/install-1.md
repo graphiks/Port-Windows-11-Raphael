@@ -13,6 +13,8 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
+- [Parted](https://github.com/graphiks/woa-raphael/blob/main/parted)
+
 ### Notes
 > [!WARNING]  
 > If you ever delete any partitions via diskpart, Windows will send a UFS command which would erase the entire UFS storage!
@@ -34,6 +36,7 @@
 > If you don't use it and you face any errors, consider it your fault and consider yourself alone if you try asking for support as you have deferred from the main guide.
 
 ##### Flash TWRP recovery
+> Open a CMD window inside the platform-tools folder, then run
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
@@ -52,7 +55,7 @@ adb shell sgdisk --resize-table=128 /dev/block/sda
 ```
 
 ##### Preparing for partitioning
-> Run these commands seperately
+> Download the parted file and put it in the platform-tools folder, before then running these commands seperately
 ```cmd
 adb push parted /cache/
 ```
