@@ -4,6 +4,7 @@
 # Running Windows on the Redmi K20 Pro / Mi 9T Pro
 
 ## Optional post-install stuff
+> [!NOTE]
 > All of these are optional, but enabling USB host mode is recommended otherwise non-powerered USB devices will not work.
 
 ### Enabling USB Host mode
