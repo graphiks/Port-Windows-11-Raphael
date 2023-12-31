@@ -36,7 +36,7 @@
 > If you don't use it and you face any errors, consider it your fault and consider yourself alone if you try asking for support as you have deferred from the main guide.
 
 ##### Flash TWRP recovery
-> Open a CMD window inside the platform-tools folder, then run
+> Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
