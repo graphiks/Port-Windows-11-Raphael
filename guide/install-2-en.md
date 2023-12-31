@@ -9,27 +9,19 @@
 
 ### Prerequisites
 
-- [Windows on ARM64 image (Windows 11 only)](https://uupdump.net/)
-- 
-- [UEFI image](https://github.com/woa-vayu/msmnilePkg/releases/latest)
-- [Drivers](https://github.com/woa-vayu/Vayu-Drivers/releases/latest)
-- [DriverUpdater]()
+- [Windows on ARM64 image creator(Windows 11 only)](https://uupdump.net/)
+- [Alternatively a prebuilt esd](https://drive.google.com/drive/folders/1JEC2QhFTyZhnm4qdzeFANTmeqoDCbS1I?usp=drive_link)
+- [UEFI image]() EDIT THIS
+- [Drivers]() EDIT THIS
+- [DriverUpdater](https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0) 
 - [Msc script](https://cdn.discordapp.com/attachments/1148093151744118816/1158416286703943840/surfaceduo1-msc.tar)
-- [TWRP](../../../releases/Recoveries) (should already be installed)
+- [TWRP](https://dl.twrp.me/raphael/twrp-3.7.0_9-0-raphael.img.html) (should already be installed)
 
 ##### Boot to TWRP
-> If rebooting has replaced your recovery back to stock, flash it again in fastboot with:
+> If rebooting on the last page has replaced your recovery back to stock, flash it again in fastboot with:
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
-
-##### Rooting your phone
-> It is recommended to root now to save time later on. If you want to skip this, proceed to "Pushing the msc script"
-
-Download the magisk apk [here](https://github.com/topjohnwu/Magisk/releases), rename it to magisk.zip and flash it in TWRP. Reboot your phone, open TWRP and follow the instructions. Select direct install and let it reboot.
-
-##### Reboot to TWRP
-> If TWRP was replaced by the stock recovery again, flash it again
 
 ##### Pushing the msc script
 Extract the msc.sh and put it in the platform-tools folder, then run:
