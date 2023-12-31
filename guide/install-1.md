@@ -84,7 +84,7 @@ resizepart $
 
 ##### Checking free space
 ```cmd
-"p free"
+p free
 ```
 
 ##### Creating ESP partition
