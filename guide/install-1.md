@@ -116,4 +116,4 @@ Format all data in TWRP, or Android will not boot.
 Just restart the phone, and see if Android still works
 
 
-## [Next step: Installing Windows](/guide/install-2-en.md)
+## [Next step: Installing Windows](/guide/install-2.md)
