@@ -16,22 +16,22 @@ This project is in an early stage, all the files here have been contributed by o
 
 ## Get Started
 
-- [Project status](guide/status-en.md)
+- [Project status](guide/status.md)
 
-- [Installation instructions](guide/install-1-en.md)
+- [Installation instructions](guide/install-1.md)
 
-- [Troubleshooting](guide/troubleshooting-en.md)
+- [Troubleshooting](guide/troubleshooting.md)
 
 
 ## Miscellaneous
 
-- [Dualboot setup](guide/dualboot-en.md)
+- [Dualboot setup](guide/dualboot.md)
 
-- [Optional post-install stuff](guide/postinstall-en.md) NEEDS TO BE CHANGED
+- [Optional post-install stuff](guide/postinstall.md) NEEDS TO BE CHANGED
 
-- [Reinstall instructions](guide/update-en.md)
+- [Reinstall instructions](guide/reinstall.md)
 
-- [Uninstall instructions](guide/uninstall-en.md) NEEDS TO BE CHANGED
+- [Uninstall instructions](guide/uninstall.md) NEEDS TO BE CHANGED
 
 ## Contributors
 
