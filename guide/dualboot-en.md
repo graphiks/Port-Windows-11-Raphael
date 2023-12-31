@@ -15,7 +15,7 @@
 
 - [TWRP](https://dl.twrp.me/raphael/twrp-3.7.0_9-0-raphael.img.html)
 
-- [UEFI image]()
+- [UEFI image]() EDIT THIS
 
 - [WOA Helper app](https://github.com/graphiks/woa-raphael/raw/main/woa-helper-raphael.apk)
 
@@ -25,7 +25,7 @@
 ## Method 1 - root required
 > This method requires root. Use method 2 if you aren't rooted.
 
-This guide assumes you are rooted, if you aren't, please follow [this guide]() first.
+This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.
 
 ### Setup - Android
 - Create a folder named "UEFI" on your internal storage and place the UEFI image here
