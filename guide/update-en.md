@@ -1,4 +1,4 @@
-<img align="right" <img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Redmi 9T Pro">
+<img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Redmi 9T Pro">
 
 
 # Running Windows on the Redmi K20 Pro / Mi 9T Pro
@@ -11,79 +11,95 @@
 - [DriverUpdater](https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0)
 - [Drivers]() EDIT THIS
 - [UEFI]() EDIT THIS
+- [Msc script](https://cdn.discordapp.com/attachments/1148093151744118816/1158416286703943840/surfaceduo1-msc.tar)
 
-#### Reinstalling Windows
-> If you have come here from the [troubleshooting page](troubleshooting-en.md) because you need to reinstall drivers, you can skip to "Reinstalling drivers" if you do not wish to re-apply the Windows image (which takes a long time)
+## Reinstalling Windows
+> [!IMPORTANT]
+> If you have come here from the [troubleshooting page](troubleshooting.md) because you need to reinstall/update drivers, you can skip some steps. Make sure to read the guide properly.
 
+##### Boot to TWRP
+> If your recovery has been replaced with the stock recovery, flash it again in fastboot with:
 ```cmd
-fastboot boot <twrp.img>
+fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
-> If you already have TWRP installed, just hold the power and vol+ buttons at startup
-
-> You will need to disable MTP in Mount
-#### Execute script
-
+##### Pushing the msc script
+Extract the msc.sh and put it in the platform-tools folder, then run:
 ```cmd
-adb shell msc.sh
+adb push msc.sh /
 ```
 
-### Assign letters to disks
+##### Running the msc script
+```cmd
+adb shell sh msc.sh
+```
 
-#### Start the Windows disk manager
+## Opening diskpart
+>  [!WARNING]
+> DO NOT ERASE ANY PARTITION WHILE IN DISKPART!!!! THIS WILL ERASE ALL OF YOUR UFS!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to Xiaomi or flashing it with EDL, both of which will likely cost money)
 
-> Once the X3 Pro is detected as a disk
-
+After you hear your phone getting reconnected to your PC run:
 ```cmd
 diskpart
 ```
+> Run the following commands in the newly opened window
 
-
-### Assign `X` to Windows volume
-
-#### Select the Windows volume of the phone
-> Use `list volume` to find it, it's the one named "WINVAYU"
-
-```diskpart
-select volume <number>
+##### Finding your phone
+```cmd
+lis dis
+```
+> This will show all available disks. Find the disk number of your phone and replace it with "$" in the command below
+```cmd
+sel dis $
 ```
 
-#### Assign the letter X
-```diskpart
-assign letter=x
+##### Selecting the ESP partition
+```cmd
+lis par
+```
+> This will print out all of the partitions in the selected disk. Check if they match up with your device and replace "$" with the number of the ESP partition (usually 30 or 31)
+```cmd
+sel par $
 ```
 
-#### Exit diskpart
-```diskpart
+##### Formatting the ESP partition
+> Skip this step if you are only reinstalling/updating drivers, or you will have to also reapply the image.
+> This will format ESP to fat32
+```cmd
+format quick fs=fat32 label="System"
+```
+
+##### Add letter Y to the ESP partion
+```cmd
+assign letter y
+```
+
+##### Selecting the Windows partitiom
+> Replace "$" in the command below with the number of the Windows partition, usually 31 or 32. If you don't know the number, run "lis par" again
+```cmd
+sel par $
+```
+
+##### Formatting the Windows partition
+> Skip this step if you are only reinstalling/updating drivers, or you will have to also reapply the image.
+> This will format Windows to NTFS
+```cmd
+format quick fs=ntfs label=Windows
+```
+
+##### Add letter X to the Windows partion
+```cmd
+assign letter x
+```
+
+##### Exit diskpart
+```cmd
 exit
 ```
 
-
-### Check what type of panel you have
-
-```cmd
-adb shell cat /proc/cmdline
-```
-> Look for `msm_drm.dsi_display0` almost at the bottom
-
-> If your device is `Tianma`, `msm_drm.dsi_display0` will be `dsi_j20s_36_02_0a_video_display`
-
-> If your device is `Huaxing`, `msm_drm.dsi_display0` will be `dsi_j20s_42_02_0b_video_display`
-
-### Install Drivers
-
-> Replace `<vayudriversfolder>` with the actual location of the drivers folder
-> Replace `<paneltype>` with the actual panel type (tianma/huaxing)
-
-```cmd
-.\driverupdater.exe -d <vayudriversfolder>\definitions\Desktop\ARM64\Internal\vayu_<paneltype>.txt -r <vayudriversfolder> -p X:
-```
+## Installing Windows
+> Skip this step if you are only reinstalling/updating drivers
 
 
-### Boot with Windows bootable UEFI image
-
-```
-fastboot flash boot <uefi.img>
-```
 
 ## Finished!
