@@ -34,7 +34,7 @@ adb push msc.sh /
 adb shell sh msc.sh
 ```
 
-## Opening diskpart
+## Diskpart
 >  [!WARNING]
 > DO NOT ERASE ANY PARTITION WHILE IN DISKPART!!!! THIS WILL ERASE ALL OF YOUR UFS!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to Xiaomi or flashing it with EDL, both of which will likely cost money)
 
@@ -134,7 +134,7 @@ bcdedit /store BCD /set "{default}" nointegritychecks on
 bcdedit /store BCD /set "{default}" recoveryenabled no
 ```
 
-### Unassign disk letters
+## Unassign disk letters
 > So that they don't stay there after disconnecting the device
 ```cmd
 diskpart
@@ -165,6 +165,8 @@ remove letter y
 exit
 ```
 
+## Backing up boot images
+
 ##### Reboot your recovery
 > To remove the msc script
 - Reboot to recovery through TWRP, or run
@@ -189,7 +191,7 @@ After having flashed the UEFI image, reboot your phone.
 
 Your device will nlw set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
 
-##### Setting up Windows
+## Setting up Windows
 > You will have to run the limited setup because Wi-Fi does not work during boot.
 
 To do this, open the accessibility menu and open the on-screen keyboard, then press SHIFT + F10 to open CMD where you will run
