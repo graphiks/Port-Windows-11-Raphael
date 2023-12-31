@@ -19,6 +19,7 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 ##### Backing up your boot image
 > Sometimes flashing Magisk can cause a bootloop. To fix this, you'll need to restore a boot.img backup.
+
 Use the TWRP backup feature to make a backup of the boot partition.
 
 ##### Flashing Magisk
@@ -27,3 +28,5 @@ Use the TWRP backup feature to make a backup of the boot partition.
 - Follow any instructions provided. Select the direct install method if you are provided with several methods.
 
 Your phone will now reboot, and you have succesfully rooted it.
+
+## Finished!
