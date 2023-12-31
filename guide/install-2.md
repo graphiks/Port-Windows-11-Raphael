@@ -194,7 +194,5 @@ Your device will now reboot. Finish setup after it boots back up. Make sure to p
 
 After windows finishes booting, press the restart button and force boot to TWRP with the button combination after the screen shuts off.
 
-#### It is recommended to set up a dualboot method now.
-> To do this, proceed to the [dualboot guide](dualboot-en.md)
 
-## Finished!
+## [Next step: Setting up dualboot](/guide/dualboot.md)
