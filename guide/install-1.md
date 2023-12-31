@@ -77,7 +77,7 @@ print
 resizepart $
 ```
 > Parted will now ask you for the end value.
-> You can choose the size you want. In this example we resize it to 32GB
+> You can choose the size you want, as long as it is lower than the value it provides to you. In this example we resize it to 32GB
 ```cmd
 32GB
 ```
