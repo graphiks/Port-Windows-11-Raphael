@@ -54,7 +54,7 @@ This guide assumes you are rooted, if you aren't, please follow [this guide](roo
 > This method does not require root, but is not really recommended as it is quite slow and unreliable.
 
 > [!NOTE]
-> If you followed the main guide, you should already have done this.
+> If you followed the main guide, you should already have done this, making the following steps obsolete.
 
 - Boot to TWRP and back up your Android boot image using the Backup button.
 > Name this backup "Android"
