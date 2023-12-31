@@ -15,7 +15,7 @@
 
 ## Reinstalling Windows
 > [!IMPORTANT]
-> If you have come here from the [troubleshooting page](troubleshooting.md) because you need to reinstall/update drivers, you can skip some steps. Make sure to read the guide properly.
+> If you have come here from the [troubleshooting page](troubleshooting-en.md) because you need to reinstall/update drivers, you can skip some steps. Make sure to read the guide properly.
 
 ##### Boot to TWRP
 > If your recovery has been replaced with the stock recovery, flash it again in fastboot with:
