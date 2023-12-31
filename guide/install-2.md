@@ -192,7 +192,9 @@ oobe/bypassnro
 ```
 Your device will now reboot. Finish setup after it boots back up. Make sure to press the "I don't have internet" button during setup.
 
-After windows finishes booting, press the restart button and force boot to TWRP with the button combination after the screen shuts off.
+After windows finishes booting, you may notice thay USB does not work. To fix this, enable USB host mode using the [optional post install guide](postinstall.md).
+
+After doing this, press the restart button and force boot to TWRP with the button combination after the screen shuts off.
 
 
 ## [Next step: Setting up dualboot](/guide/dualboot.md)
