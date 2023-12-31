@@ -189,7 +189,7 @@ Use the TWRP backup feature to backup your Windows boot image. Name this backup 
 ## Boot into Windows
 After having flashed the UEFI image, reboot your phone.
 
-Your device will nlw set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
+Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
 
 ## Setting up Windows
 > You will have to run the limited setup because Wi-Fi does not work during boot.
@@ -200,9 +200,9 @@ oobe/bypassnro
 ```
 Your device will now reboot. Finish setup after it boots back up. Make sure to press the "I don't have internet" button during setup.
 
-After windows finishes booting, press the restart button and force boot to TWRP with the button combination after the screen shuts off.
+After windows finishes booting, you may notice thay USB does not work. To fix this, enable USB host mode using the optional [post install guide](postinstall.md).
 
-#### It is recommended to set up a dualboot method now.
-> To do this, proceed to the [dualboot guide](dualboot-en.md)
+After doing this, press the restart button and force boot to TWRP with the button combination after the screen shuts off.
 
-## Finished!
+
+## [Next step: Setting up dualboot](/guide/dualboot.md)
