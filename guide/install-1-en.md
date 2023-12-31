@@ -62,11 +62,7 @@ adb shell "chmod 755 /cache/parted"
 ```
 
 ```cmd
-adb shell cd /cache
-```
-
-```cmd
-adb shell ./parted /dev/block/sda
+adb shell /cache/parted /dev/block/sda
 ```
 
 ##### Printing the current table partition:
