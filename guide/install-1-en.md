@@ -8,7 +8,7 @@
 ## Partitioning your device
 
 ### Prerequisites
-
+- A brain
 - [Raphael TWRP 3.7.0_9](https://dl.twrp.me/raphael/twrp-3.7.0_9-0-raphael.img.html)
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
@@ -38,22 +38,80 @@
 fastboot flash recovery path\to\twrp.img
 fastboot reboot recovery
 ```
-##### Partition backup
+
+> [!IMPORTANT]
 > If you do anything incorrectly, you may wipe your UFS and render your device unusable.
-Use TWRP to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
 
-##### Partitioning guide
+Use TWRP now to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
 
-> If it asks you to run it once again, do so
+### Partitioning guide
+> Your Redmi K20 Pro / Mi 9T Pro may have different storage sizes. Check free space using "(parted) free" and set the end value accordingly. This guide uses the values of the 128GB model.
 
-> This is **optional** but you can **set custom sizes using this script**
+##### Extending the partition limit
+```cmd
+adb shell sgdisk --resize-table=128 /dev/block/sda
+```
 
-> To set custom sizes do ```adb shell partition [TARGET WINDOWS SIZE IN GB]```
-
-> Make sure you do not add GB at the end, just the number
+##### Preparing for partitioning
+> Run these commands seperately
+```cmd
+adb push parted /cache/
+```
 
 ```cmd
-adb shell partition
+adb shell "chmod 755 /cache/parted"
+```
+
+```cmd
+adb shell cd /cache
+```
+
+```cmd
+adb shell ./parted /dev/block/sda
+```
+
+##### Printing the current table partition:
+> Parted will print the list of partitions, userdata should be the last partition in the list.
+```cmd
+(parted) print
+```
+
+##### Resizing userdata
+> You can choose the size you want. In this example we resize it to 32GB.
+```cmd
+(parted) resizepart (userdata partition number)
+```
+> 32GB is the **End** of the **userdata** partition and 32.5GB is the end of the partition we will be creating, so it will be 500MB in size. Also replace 32GB to the end of userdata accordingly.
+```cmd
+End? [122GB]? 32GB
+```
+
+##### Checking free space
+```cmd
+"(parted) free"
+```
+
+##### Creating ESP partition
+> Here, 32GB is the end of userdata partition
+```cmd
+(parted) mkpart esp fat32 32GB 32.5GB
+```
+
+> Replace "$" with your ESP partition number, usually 30, or 31
+```cmd
+(parted) set $ esp on
+```
+
+##### Creating Windows partition
+> Here, 122GB is the end value of your phone's total storage. Replace with the end value you see when executing "p free"
+> 32.5GB is the end of esp
+```cmd
+(parted) mkpart win ntfs 32.5GB 122GB
+```
+
+##### Exit parted
+```cmd
+(parted) quit
 ```
 
 #### Check if Android still starts
