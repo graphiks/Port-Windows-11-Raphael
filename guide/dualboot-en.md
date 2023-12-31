@@ -1,70 +1,65 @@
-<img align="right" src="https://github.com/woa-vayu/src_vayu_windows/blob/main/2Poco X3 Pro Windows.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Redmi 9T Pro">
 
 
-# Running Windows on the POCO X3 Pro
+# Running Windows on the Redmi K20 Pro / Mi 9T Pro
 
-## Dualbooting Android and Windows seamlessly
+## Dualboot guide
 
 > [!NOTE] 
-> This will work on any android version and kernel but it does take longer to boot into Android from Windows
+> There are two methods, use whichever one suits your situation the most. Method 1 requires root, while method 2 does not.
 
 ### Prerequisites
-
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Modified TWRP](../../../releases/Recoveries)
+- [TWRP]()
 
-- [NTFS Android Magisk Module](../../../releases/ntfsdroid)
+- [UEFI image]()
 
-- [UEFI](https://github.com/woa-vayu/msmnilePkg/releases/latest)
+- [WOA Helper app]()
 
-- [UEFI & Android Boot Flashing App](../../../releases/dualboot)
+- [StA Installer]()
 
-### Phone Setup
 
-#### Adding NTFS Support to android
+## Method 1 - root required
+> This method requires root. Use method 2 if you aren't rooted.
 
-- Install Magisk if you haven't already
-- Install the NTFS Android magisk module through the Magisk manager
-
-#### Application Setup
-
-- Install the APK provided
+### Setup - Android
 - Create a folder named "UEFI" on your internal storage
-- Copy all uefi images into the UEFI folder
+- Copy the uefi image into the UEFI folder
+- Download and install the APK provided
+- Also download the StA Installer
 - Open the app and allow any root access it wants
+- Press the "BACKUP ANDROID BOOT" button, which will back up your boot image to /sdcard/boot.img (internal storage)
+- Also press the "Mount/Unmount Windows" button to mount Windows to /sdcard/Windows
+- Move/copy the StA Installer and boot.img to /sdcard/Windows
+- Return to the WOA Helper app and press "Quickboot to Windows"
 
-### PC part
+### Setup - Windows
+- Navigate to C:\StA_installer_raphael.exe and run it. If it doesn't work, make sure that any antivirus software is off, as it will probably not let the app run.
 
-#### Flashing the recovery and booting it
-
-- Reboot to the bootloader
-
-- Run ```fastboot flash recovery <recovery.img> reboot recovery```
-
-#### Transfering files to the phone
-
-- Run ```adb shell dd if=/dev/block/by-name/boot of=/win/boot.img```
-- Run ```adb push StA_installer_vayu.exe /win/Users/<username>/Desktop/StA_installer_vayu.exe```
-
-#### Boot your phone into windows
-
-- Do ```adb reboot bootloader``` to reboot into fastboot
-- Do ```fastboot flash boot <UEFI File Here>.img reboot``` to flash the image and reboot the phone
-
-#### Phone Setup - Windows
-
-- Run the StA_installer_vayu.exe on your phone (make sure that any antivirus software is off, as it will probably not let the app run)
-
-#### Booting to android
-  
+##### Booting to android
   - Run the new shortcut on your desktop as **ADMINISTRATOR**
 
-#### Booting to windows
-  
+##### Booting to windows
   - Run the app
   - Press "Quickboot to windows"
   
+## Finished!
+
+
+
+## Method 2 - no root required
+> This method does not require root, but is not really recommended as it is quite slow and unreliable.
+
+- Boot to TWRP and back up your Android boot image using the Backup button.
+> Name this backup "Android"
+
+- Flash the Windows UEFI (xiaomi-raphael.img) to the boot partition, then make another backup of your boot image.
+> Name this backup "Windows"
+
+##### Switching between Android and Windows
+- Shutdown / reboot your device and boot to TWRP. Restore the boot backup of whichever operating system you would like to load, then reboot.
+
 ## Finished!
