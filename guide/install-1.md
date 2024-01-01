@@ -9,11 +9,11 @@
 
 ### Prerequisites
 - A brain (most important of all)
-- [Raphael TWRP 3.7.0_9](https://dl.twrp.me/raphael/twrp-3.7.0_9-0-raphael.img.html)
+- [Raphael TWRP 3.7.0_9](https://github.com/graphiks/Port-Windows-11-Raphael/releases/download/raphael/twrp-3.7.0_9-0-raphael.img)
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Parted](https://github.com/graphiks/woa-raphael/blob/main/parted)
+- [Parted](https://github.com/graphiks/Port-Windows-11-Raphael/releases/download/raphael/parted)
 
 ### Notes
 > [!WARNING]  
