@@ -15,7 +15,7 @@
 
 - [TWRP](https://dl.twrp.me/raphael/twrp-3.7.0_9-0-raphael.img.html)
 
-- [UEFI image]() EDIT THIS
+- [UEFI image](https://github.com/graphiks/woa-raphael/releases/tag/raphael2)
 
 - [WOA Helper app](https://github.com/graphiks/woa-raphael/raw/main/woa-helper-raphael.apk)
 
