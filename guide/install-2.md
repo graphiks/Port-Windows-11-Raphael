@@ -11,7 +11,7 @@
 
 - [Windows on ARM64 image creator](https://uupdump.net/)
 - [Alternatively a prebuilt esd](https://drive.google.com/drive/folders/1JEC2QhFTyZhnm4qdzeFANTmeqoDCbS1I?usp=drive_link)
-- [UEFI image]() EDIT THIS
+- [UEFI image](https://github.com/graphiks/woa-raphael/releases/tag/raphael2)
 - [Drivers]() EDIT THIS
 - [DriverUpdater](https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0) 
 - [Msc script](https://cdn.discordapp.com/attachments/1148093151744118816/1158416286703943840/surfaceduo1-msc.tar)
