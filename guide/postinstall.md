@@ -7,22 +7,20 @@
 > [!NOTE]
 > All of these are optional, but enabling USB host mode is recommended otherwise non-powerered USB devices will not work.
 
+### Prerequisites
+- [This registry file](https://github.com/graphiks/Port-Windows-11-Raphael/releases/download/raphael-usb/USB-OTG_ON.reg) 
+- [This batch script](https://github.com/graphiks/Port-Windows-11-Raphael/releases/download/raphael-usb/OTG.and.Charge.switcher.bat)
+
 ### Enabling USB Host mode
-> This makes USB work properly. If USB doesn't work, you may have to plug it in before boot.
+> [!NOTE]
+> This will also disable charging (not that you would want to charge in Windows anyways)
 
-##### Opening the command prompt as an administrator
-> This is self explanatory, this opens the command prompt as administrator
+ - Run the .reg file you just downloaded on your phone, click yes.
+ - Run the batch script that you just downloaded on your phone. Select option 1 <br>
+(Re-run the batch script and select 2 if you want charging back)
 
-- Go to the start menu
-- Search command prompt
-- Hold the command prompt application and run it as administrator
-- Approve any UAC dialogs
+This makes USB work properly. If USB doesn't work, you may have to plug it in before boot.
 
-##### Enabling USB host mode
-> This edits the registry key to tell the USB Controller to put the device into host mode
-
-- In the command prompt put ```reg add "HKLM\SYSTEM\CurrentControlSet\Enum\ACPI\QCOM0597\0\Device Parameters" /v RoleSwitchMode /t REG_DWORD /d 1```
-- Reboot your phone
 
 ## Finished!
 
