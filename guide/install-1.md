@@ -38,7 +38,7 @@
 ##### Flash TWRP recovery
 > Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery
+fastboot flash recovery path\to\twrp-3.7.0_9-0-raphael.img reboot recovery
 ```
 
 > [!IMPORTANT]
