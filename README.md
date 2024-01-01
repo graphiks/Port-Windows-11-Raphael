@@ -1,14 +1,13 @@
-<img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Poco X3 Pro">
+<img align="right" src="https://raw.githubusercontent.com/graphiks/woa-raphael/65c0ee06045c13d1ef0f5f88aa687c50274ef7f5/raphael.png" width="350" alt="Windows 11 Running On A Redmi 9T Pro">
 
 
 # Running Windows on the Xiaomi 9T Pro / Redmi K20 Pro
-[![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/winonvayualt)
+[![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/woaraphael)
 
-English **|** [~~Русский~~](README_RU.md)
 
 ## ⚠️ Warning
 
-We're not responsible for bricked devices, missing recovery partitions, dead xiaomi factoryline ~~workers~~ cowboys, dead microSD cards, dead pmics, dead ram, dead display ics, dead cpus, any xiaomi/poco shenanigans, dead cats or dogs, nuclear wars or you getting fired because you forgot to boot back in to android for the alarm.
+We're not responsible for bricked devices, missing recovery partitions, dead xiaomi factoryline ~~workers~~ cowboys, dead pmics, dead ram, dead display ics, dead cpus, any xiaomi/redmi shenanigans, dead cats or dogs, nuclear wars or you getting fired because you forgot to boot back in to android for the alarm.
 
 This project is in an early stage, all the files here have been contributed by other users, here you will find a guide with the working files we managed to get. This is a delicate process, do it under your own risk and follow all the steps carefully.
 
@@ -17,22 +16,22 @@ This project is in an early stage, all the files here have been contributed by o
 
 ## Get Started
 
-- [Project status](guide/status-en.md)
+- [Project status](guide/status.md)
 
-- [Installation instructions](guide/install-1-en.md)
+- [Installation instructions](guide/install-1.md)
 
-- [Troubleshooting](guide/troubleshooting-en.md)
+- [Troubleshooting](guide/troubleshooting.md)
 
 
 ## Miscellaneous
 
-- [Dualboot setup](guide/dualboot-en.md)
+- [Dualboot setup](guide/dualboot.md)
 
-- [Optional post-install stuff](guide/postinstall-en.md)
+- [Optional post-install stuff](guide/postinstall.md)
 
-- [Driver updating instructions](guide/update-en.md)
+- [Reinstall instructions](guide/reinstall.md)
 
-- [Uninstall instructions](guide/uninstall-en.md)
+- [Uninstall instructions](guide/uninstall.md) NEEDS TO BE CHANGED
 
 ## Contributors
 
@@ -55,4 +54,8 @@ This project is in an early stage, all the files here have been contributed by o
 [<img alt="KuatoDev" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/17999613?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/KuatoDev)
 [<img alt="belomaxorka" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/54049465?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/belomaxorka)
 [<img alt="nedokaka" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/104865210?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/nedokaka)
-[<img alt="RIllEX1" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/142384494?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/RIllEX1)
+[<img alt="RIllEX1"
+src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/142384494?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/RIllEX1)
+[<img alt="n00b69" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/83274506?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/n00b69)
+[<img alt="graphiks" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/136170061?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/graphiks)
+
