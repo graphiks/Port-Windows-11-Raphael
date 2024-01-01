@@ -118,7 +118,7 @@ quit
 
 ##### Formatting data
 Format all data in TWRP, or Android will not boot.
-
+( Go to Wipe > Format data > type yes )
 
 #### Check if Android still starts
 Just restart the phone, and see if Android still works
