@@ -7,6 +7,8 @@
 
 The project is in development. Expect some driver updates in the near future.
 
+ - [Back to main page](/README.md)
+
 #### Features
 
 - [X] Audio 
@@ -39,5 +41,3 @@ The project is in development. Expect some driver updates in the near future.
 - [ ] TPM (Software Backed)
 
 
-
- - [Back to main page](/README.md)
