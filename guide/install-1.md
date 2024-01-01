@@ -55,7 +55,7 @@ adb shell sgdisk --resize-table=128 /dev/block/sda
 ```
 
 ##### Preparing for partitioning
-> Download the parted file and put it in the platform-tools folder, before then running these commands seperately
+> Download the parted file and move it in the platform-tools folder, before then running these commands seperately
 ```cmd
 adb push parted /cache/
 ```
@@ -82,8 +82,9 @@ resizepart $
 > Parted will now ask you for the end value.
 > You can choose the size you want, as long as it is lower than the value it provides to you. In this example we resize it to 32GB
 ```cmd
-32GB
+End? [122GB]? 32GB
 ```
+Note: 122GB is parted telling us the maximum end value we can select.
 
 ##### Checking free space
 ```cmd
