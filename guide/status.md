@@ -7,7 +7,7 @@
 
 The project is in development. Expect some driver updates in the near future.
 
-## [Back to main page](/README.md)
+
 
 #### Features
 
