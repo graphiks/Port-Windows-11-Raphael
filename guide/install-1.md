@@ -8,7 +8,7 @@
 ## Partitioning your device
 
 ### Prerequisites
-- A brain
+- A brain (most important of all)
 - [Raphael TWRP 3.7.0_9](https://dl.twrp.me/raphael/twrp-3.7.0_9-0-raphael.img.html)
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
