@@ -189,17 +189,20 @@ After having flashed the UEFI image, reboot your phone.
 Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
 
 ## Setting up Windows
-> You will have to run the limited setup because Wi-Fi does not work during boot.
+> [!IMPORTANT]
+> USB will not work except if you have a powered USB hub. We can fix this after we get into the desktop.
 
-To do this, open the accessibility menu and open the on-screen keyboard, then press SHIFT + F10 to open CMD where you will run
+Before continuing with setup, open the accessibility menu in the bottom right corner and enable the on-screen keyboard, then tap FN+SHIFT + F10 (if it ask you to tap somewhere to type just tap the background) which will open a command prompt, in which you will need to type:
 ```cmd
-oobe/bypassnro
+cd oobe
 ```
-Your device will now reboot. Finish setup after it boots back up. Make sure to press the "I don't have internet" button during setup.
+After that, type:
+```cmd
+bypassnro.cmd
+```
+Your device will now reboot. Continue setup as normal. Make sure to press the "I don't have internet" button when you reach the **Let's connect you to a network** section.
 
-After windows finishes booting, you may notice thay USB does not work. To fix this, enable USB host mode using the optional [post install guide](postinstall.md).
-
-After doing this, press the restart button and force boot to TWRP with the button combination after the screen shuts off.
+If you want USB working read this [post install guide](postinstall.md).
 
 
 ## [Next step: Setting up dualboot](/guide/dualboot.md)
